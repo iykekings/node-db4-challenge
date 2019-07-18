@@ -13,15 +13,6 @@ exports.up = function(knex) {
         .text('name', 128)
         .unique()
         .notNullable();
-      // tbl.text('instructions')
-      //   .notNullable();
-      // tbl.integer('scheme_id')
-      //   .unsigned()
-      //   .notNullable()
-      //   .references('id')
-      //   .inTable('schemes')
-      //   .onUpdate('CASCADE')
-      //   .onDelete('CASCADE');
     })
     .createTable('steps', tbl => {
       tbl.increments();
